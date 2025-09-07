@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>John Mark Malabago</h1>
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#trainings">Trainings/Seminars</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Job Experience</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section id="profile">
+    <h2>Profile</h2>
+    <p>Hi! I am John Mark Malabago, College student in CITE Technical Institute getting a cousre of Computer Engineeriong Technology.</p>
+  </section >
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>College - Dipmola in Computer Engineering Technology - CITE Technical Institute, Inc. (2023-Present)</li>
+      <li>Senior High School - Binabag Natrional High School (2020-2021)</li>
+      <li>High School - Binabag National High School (2018-2019)</li>
+      <li>Elementary - Quezon Elementary School (2012-2013)</li>
+    </ul>
+  </section>
+
+  <section id="trainings">
+    <h2>Trainings / Seminars</h2>
+    <ul>
+      <li>POPCOM Facilatator Training - Senior High</li>
+      <li>SSG President Seminar - Senior and Junior High</li>
+      <li>BRAHD V-President Seminar - Senior and Junior High</li>
+      <li>RedCross Training - Senior High</li>
+      <li>BRS Team Building - Senior High</li>
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        Basic Portfolio Website
+        <button class="open-modal-btn" data-project="portfolio" aria-haspopup="dialog">Details</button>
+      </li>
+      <li>
+        To-Do App
+        <button class="open-modal-btn" data-project="todo" aria-haspopup="dialog">Details</button>
+      </li>
+      <li>
+        Practical Research
+        <button class="open-modal-btn" data-project="portfolio" aria-haspopup="dialog">Details</button>
+      </li>
+      <li>
+        Ticketing Management
+        <button class="open-modal-btn" data-project="portfolio" aria-haspopup="dialog">Details</button>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Job Experience</h2>
+    <p>Labor Engineering Work- (2021)</p>
+    <p>Construction worker - (2021-2022)</p>
+    <p>7/11 Cashier -(2022-2024)</p>
+    <p>J&T Sorter -(2025)</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name<span style="color:red;">*</span></label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+      
+      <label for="email">Email<span style="color:red;">*</span></label>
+      <input type="email" id="email" name="email" required placeholder="Your email" />
+      
+      <label for="message">Message<span style="color:red;">*</span></label>
+      <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModal" aria-label="Close">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody"></p>
+  </div>
+</div>
+
+
+<button id="backToTop" title="Back to top">↑ Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>

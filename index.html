@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITE Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CITE Registration Form</h2>
+        <form id="CiteRegistrationForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <div class="error" id="firstNameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                <div class="error" id="lastNameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="suffix">Suffix:</label>
+                <input type="text" id="suffix" name="suffix">
+            </div>
+            <div class="form-group">
+                <label for="contactNo">Contact No.:</label>
+                <input type="text" id="contactNo" name="contactNo">
+                <div class="error" id="contactNoError"></div>
+            </div>
+            <div class="form-group">
+                <label for="batch">Batch:</label>
+                <select id="batch" name="batch">
+                    <option value="">Select Batch</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                </select>
+                <div class="error" id="batchError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <div class="error" id="emailError"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
